@@ -30,7 +30,7 @@ public class QuoteResponse {
     }
 
     public Quote getQuote(){
-        List<Quote> quotes = contents.getQuoteList().getQuotes();
+        List<Quote> quotes = contents.getQuotes();
         if(quotes!=null && quotes.size()!=0)
             return quotes.get(0);
         return null;

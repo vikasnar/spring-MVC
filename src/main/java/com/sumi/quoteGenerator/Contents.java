@@ -1,16 +1,22 @@
 package com.sumi.quoteGenerator;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import java.util.List;
+
 /**
  * Created by VikasN on 7/23/16.
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Contents {
-    private QuoteList quoteList;
 
-    public void setQuoteList(QuoteList quoteList) {
-        this.quoteList = quoteList;
+    private List<Quote> quotes;
+
+    public void setQuotes(List<Quote> quotes) {
+        this.quotes = quotes;
     }
 
-    public QuoteList getQuoteList() {
-        return quoteList;
+    public List<Quote> getQuotes() {
+        return quotes;
     }
 }
