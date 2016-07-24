@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/helpme")
-public class ServiceController {
+public class HelpMeController {
 
-    private static Logger LOGGER = LoggerFactory.getLogger(ServiceController.class);
+    private static Logger LOGGER = LoggerFactory.getLogger(HelpMeController.class);
 
     @Value("${author.name}") String authorName;
 
@@ -29,6 +29,5 @@ public class ServiceController {
         author.setEmail(authorEmail);
         return new ResponseEntity<>(author, HttpStatus.OK);
     }
-
 
 }
