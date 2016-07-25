@@ -15,7 +15,7 @@ import java.util.Arrays;
  * Created by VikasN on 7/23/16.
  */
 @RestController
-@RequestMapping("/quoteOfTheDay")
+@RequestMapping("/quote")
 public class QuoteController {
 
     private final Logger logger = Logger.getLogger(QuoteController.class);
