@@ -1,0 +1,7 @@
+author:
+  name : Vikas N
+  email : vikasnar@usc.edu
+
+api:
+  testKey : "Insert Key her ;)"
+  endpoint : "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous"
