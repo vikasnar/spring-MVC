@@ -22,4 +22,4 @@ Alternatively you may also use the following Maven commands to run the applicati
 
 ```mvn spring-boot:run```
 
-Open a browser and visit [http://localhost:8080/quote] to get a random quote.
+Open a browser and visit (http://localhost:8080/quote) to get a random quote.
