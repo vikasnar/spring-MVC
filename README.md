@@ -9,12 +9,10 @@ A Starter Web application to provide a Web service using Spring.
 
 ## Building
 
-From IDE (Eclipse, Intellij)
-----------------
+###From IDE (Eclipse, Intellij)
   - Open as a Maven Project and compile.
 
-From Command Line
-----------------
+###From Command Line
   ``` mvn clean package ```
 
 ## Running the Application
