@@ -2,6 +2,7 @@ package com.sumi.quoteGenerator;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -18,8 +19,12 @@ import java.util.Arrays;
 public class QuoteController {
 
     private final Logger logger = Logger.getLogger(QuoteController.class);
-    private static final String APPLICATION_KEY = "VDCQbVQnQomshXJy2VbSTStYpnc0p1a4ZUcjsnWK9BG07K51ha";
-    private static final String API_ENDPOINT = "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous";
+
+    @Value("${api.testKey}")
+    private String APPLICATION_KEY;
+
+    @Value("${api.endpoint}")
+    private String API_ENDPOINT;
 
     @RequestMapping(method = {RequestMethod.GET, RequestMethod.POST})
     public String getRandomQuote(){
